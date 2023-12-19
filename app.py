@@ -12,7 +12,7 @@ import gru_inference
 
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")  # ""#
-    os.environ["OPENAI_API_KEY"] = openai_api_key
+    #os.environ["OPENAI_API_KEY"] = openai_api_key
 llm = ChatOpenAI(model_name="gpt-3.5-turbo")
 greeting_msg = "Hello! How Can I help you ? Do you want Predict stocks today?"
 prompt = ChatPromptTemplate.from_messages([
