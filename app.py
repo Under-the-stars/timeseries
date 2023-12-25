@@ -9,6 +9,7 @@ from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, Me
 from langchain.schema import SystemMessage
 
 import gru_inference
+import gru_train_infer
 
 # with st.sidebar:
 #     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")  # ""#
