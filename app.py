@@ -78,12 +78,12 @@ if prompt := st.chat_input("Hi!"):
             ticker = 'AAPL'
             st.session_state.messages.append({"role": "assistant", "content": full_response})
             # st.session_state.clicked = True
-            print("apple")
+            # print("apple")
             st.rerun()
         elif "date" in full_response.lower():
             st.session_state.messages.append({"role": "assistant", "content": full_response})
             # st.session_state.file_upload_flag = True
-            print("date")
+            # print("date")
             st.rerun()
 
         message_placeholder.markdown(full_response)
