@@ -58,7 +58,8 @@ if prompt := st.chat_input("Hi!"):
             date = prompt.split(":")[-1].strip()
             date_format = "%d-%m-%Y"
             ticker = "AAPL"
-            value = gru_inference.predict_(end=datetime.datetime.strptime(date, date_format))
+            # value = gru_inference.predict_(end=datetime.datetime.strptime(date, date_format),ticker=ticker)
+            value = gru_train_infer.train_infer(end=datetime.datetime.strptime(date, date_format), ticker=ticker)
             forcast_msg = f"Stock price of {ticker} on {date} is $ {value}"
 
     with st.chat_message("assistant"):
