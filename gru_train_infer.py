@@ -49,9 +49,9 @@ def train_infer(end,ticker='AAPL'):
         x_train.append(trained_data[i - 100:i,
                        0])  # appending the past 60 values to x_train; from position i-60 to i without including i
         y_train.append(trained_data[i, 0])  # contain the 100 first values. 0 is the position column
-        if i <= 101:
-            print(x_train)
-            print(y_train)
+        # if i <= 101:
+        #     print(x_train)
+        #     print(y_train)
 
     # Converting the x_train and y_train to numpy arrays for training the LSTM model
     x_train, y_train = np.array(x_train), np.array(y_train)
